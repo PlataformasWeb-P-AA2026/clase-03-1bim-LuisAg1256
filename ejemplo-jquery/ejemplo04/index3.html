@@ -39,12 +39,13 @@
       $( "button" ).click(function() {
         var texto1 = $('#nombreCarrera').text();
         var texto2 = $('#nombreUniversidad').text();
-        var respuesta = "Su carrera es: " + texto1 + ". Su universidad es " + texto2;
-        
-        $('#mensajeFinal').text(respuesta);
-        $('#mensajeFinal2').text(respuesta);
-        $('#mensajeFinal3').text(respuesta);
-  
+        $('#mensajeFinal').text("Su carrera es: "+ texto1 + ". Su universidad es "
+          + texto2);
+        $('#mensajeFinal2').text("Su carrera es: "+ texto1 + ". Su universidad es "
+          + texto2);
+        $('#mensajeFinal3').text("Su carrera es: "+ texto1 + ". Su universidad es "
+          + texto2);
+        console.log(texto1);
       });
     });
   </script>
