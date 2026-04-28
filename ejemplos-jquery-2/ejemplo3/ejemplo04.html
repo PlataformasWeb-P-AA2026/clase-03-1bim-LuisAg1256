@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,8 +7,8 @@
   </head>
   <body>
       <h1>Ejemplo de Uso de Jquery</h1>
-      <p id="mensajeFinal">
-      </p>
+      <ul id="mensajeFinal">
+      </ul>
       <button type="submit" id="obtenerInformacion">Obtener información</button>
       <button type="submit" id="limpiarInformacion">Limpiar información</button>
   </body>
@@ -25,7 +24,7 @@
                 console.log(data[i]);
                 console.log(data[i].Code);
                 console.log(data[i].Name);
-                $('#mensajeFinal').append("<p> <b>Código:</b> "+ data[i].Code + " <b>Nombre:</b> " + data[i].Name + "</p>");
+                $('#mensajeFinal').append("<li> <b>Código:</b> "+ data[i].Code + " <b>Nombre:</b> " + data[i].Name + "</li>");
               }
             });      
       });
